@@ -2,7 +2,7 @@
 
 Soulbound tokens are cool, but sometimes users want to move their asset between wallets or burn them.
 
-Admin bound is like soul bound, but the original minter (the "Admin") has the ability to transfer the token to whatever address they want at any time.
+Admin bound is like soul bound, but the original minter (the "Admin") has the ability to transfer the token to whatever wallet they want at any time.
 
 Because the admin can transfer the token whenever they want, it is impractical to sell admin bounds on secondary markets.
 
