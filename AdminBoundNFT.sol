@@ -4,7 +4,7 @@
 
 pragma solidity ^0.8.0;
 
-import "./ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract AdminBoundNFT is ERC721 {
@@ -38,7 +38,7 @@ contract AdminBoundNFT is ERC721 {
     }
 
     /**
-     * OVERRIDE TRANSFER FUNCTIONS TO INCLUDE ADMIN VALIDATION
+     * OVERRIDE TRANSFER FUNCTIONS TO INCLUDE ADMIN PRIVELEGES & VALIDATION
      */
 
     function _ensureSenderIsAdmin(uint256 tokenId) internal view {
