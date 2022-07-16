@@ -19,13 +19,10 @@ contract AdminBoundNFT is ERC721 {
      * STORE THE ADMIN ON MINT
      */
 
-    function mintAdminBound(address owner, address admin)
-        public
-        returns (uint256)
-    {
+    function mintAdminBound(address owner) public returns (uint256) {
         uint256 newItemId = _tokenIds.current();
         _mint(owner, newItemId);
-        _admins[newItemId] = admin;
+        _admins[newItemId] = _msgSender();
 
         _tokenIds.increment();
         return newItemId;
